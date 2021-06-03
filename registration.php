@@ -212,7 +212,7 @@ if (isset($_POST['form1'])) {
                     
 
                     <form action="" method="post">
-                        <?php $csrf->echoInputField(); ?>
+                        <?php //$csrf->echoInputField(); ?>
                         <div class="row">
                             <div class="col-md-2"></div>
                             <div class="col-md-8">
