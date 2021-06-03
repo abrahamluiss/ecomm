@@ -1,0 +1,6 @@
+innodb_log_file_size=512M
+innodb_strict_mode=0
+
+admin
+user: admi@gmail.com
+pass: 1234
