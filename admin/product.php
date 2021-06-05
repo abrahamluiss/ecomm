@@ -2,7 +2,7 @@
 
 <section class="content-header">
 	<div class="content-header-left">
-		<h1>View Products</h1>
+		<h1>Ver Productos</h1>
 	</div>
 	<div class="content-header-right">
 		<a href="product-add.php" class="btn btn-primary btn-sm">Add Product</a>
@@ -103,11 +103,11 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="myModalLabel">Delete Confirmation</h4>
+                <h4 class="modal-title" id="myModalLabel">Eliminar confirmación</h4>
             </div>
             <div class="modal-body">
-                <p>Are you sure want to delete this item?</p>
-                <p style="color:red;">Be careful! This product will be deleted from the order table, payment table, size table, color table and rating table also.</p>
+                <p>¿Está seguro de que desea eliminar este elemento?</p>
+                <p style="color:red;">¡Ten cuidado! Este producto también se eliminará de la tabla de pedidos, la tabla de pagos, la tabla de tallas, la tabla de colores y la tabla de clasificación.</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>

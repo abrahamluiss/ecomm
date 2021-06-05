@@ -49,7 +49,7 @@ if(!isset($_SESSION['user'])) {
 		<header class="main-header">
 
 			<a href="index.php" class="logo">
-				<span class="logo-lg">Ecommerce</span>
+				<span class="logo-lg">ZapCubix</span>
 			</a>
 
 			<nav class="navbar navbar-static-top">
@@ -65,7 +65,7 @@ if(!isset($_SESSION['user'])) {
 						<li class="dropdown user user-menu">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 								<img src="../assets/uploads/<?php echo $_SESSION['user']['photo']; ?>" class="user-image" alt="User Image">
-								<span class="hidden-xs"><?php echo $_SESSION['user']['full_name']; ?></span>
+								<span class="hidden-xs">Admin</span>
 							</a>
 							<ul class="dropdown-menu">
 								<li class="user-footer">
@@ -93,11 +93,11 @@ if(!isset($_SESSION['user'])) {
 
 			        <li class="treeview <?php if($cur_page == 'index.php') {echo 'active';} ?>">
 			          <a href="index.php">
-			            <i class="fa fa-hand-o-right"></i> <span>Dashboard</span>
+			            <i class="fa fa-hand-o-right"></i> <span>PANEL</span>
 			          </a>
 			        </li>
 
-					
+<!-- 					
 			        <li class="treeview <?php if( ($cur_page == 'settings.php') ) {echo 'active';} ?>">
 			          <a href="settings.php">
 			            <i class="fa fa-hand-o-right"></i> <span>Settings</span>
@@ -173,7 +173,7 @@ if(!isset($_SESSION['user'])) {
 							<li><a href="mid-category.php"><i class="fa fa-circle-o"></i> Mid Level Category</a></li>
 							<li><a href="end-category.php"><i class="fa fa-circle-o"></i> End Level Category</a></li>
 						</ul>
-					</li>
+					</li> -->
 
 
 					<li class="treeview <?php if( ($cur_page == 'product.php') || ($cur_page == 'product-add.php') || ($cur_page == 'product-edit.php') ) {echo 'active';} ?>">
@@ -182,7 +182,7 @@ if(!isset($_SESSION['user'])) {
 			          </a>
 			        </li>
 
-
+<!-- 
 			        <li class="treeview <?php if( ($cur_page == 'order.php') ) {echo 'active';} ?>">
 			          <a href="order.php">
 			            <i class="fa fa-hand-o-right"></i> <span>Order</span>
@@ -247,7 +247,7 @@ if(!isset($_SESSION['user'])) {
 			        </li>
 
 
-			        
+			         -->
 
 			        
 

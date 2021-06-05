@@ -249,10 +249,10 @@ if(isset($_POST['form2'])) {
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="myModalLabel">Delete Confirmation</h4>
+                <h4 class="modal-title" id="myModalLabel">Eliminar confirmación</h4>
             </div>
             <div class="modal-body">
-                Are you sure want to delete this item?
+                ¿Está seguro de que desea eliminar este elemento?
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
