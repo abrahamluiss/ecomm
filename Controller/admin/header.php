@@ -93,14 +93,14 @@ if(!isset($_SESSION['user'])) {
 
 			        <li class="treeview <?php if($cur_page == 'index.php') {echo 'active';} ?>">
 			          <a href="index.php">
-			            <i class="fa fa-hand-o-right"></i> <span>Dashboard</span>
+			            <i class="fa fa-hand-o-right"></i> <span>Panel</span>
 			          </a>
 			        </li>
 
-					
+<!-- 					
 			        <li class="treeview <?php if( ($cur_page == 'settings.php') ) {echo 'active';} ?>">
 			          <a href="settings.php">
-			            <i class="fa fa-hand-o-right"></i> <span>Settings</span>
+			            <i class="fa fa-hand-o-right"></i> <span>Ajustes</span>
 			          </a>
 			        </li>
 
@@ -112,13 +112,13 @@ if(!isset($_SESSION['user'])) {
 
 			        <li class="treeview <?php if( ($cur_page == 'service.php') ) {echo 'active';} ?>">
 			          <a href="service.php">
-			            <i class="fa fa-hand-o-right"></i> <span>Service</span>
+			            <i class="fa fa-hand-o-right"></i> <span>Servicios</span>
 			          </a>
 			        </li>
 
 			        <li class="treeview <?php if( ($cur_page == 'testimonial.php') ) {echo 'active';} ?>">
 			          <a href="testimonial.php">
-			            <i class="fa fa-hand-o-right"></i> <span>Testimonial</span>
+			            <i class="fa fa-hand-o-right"></i> <span>Testimonios</span>
 			          </a>
 			        </li>
 
@@ -131,14 +131,14 @@ if(!isset($_SESSION['user'])) {
 			        <li class="treeview <?php if( ($cur_page == 'photo.php') || ($cur_page == 'video.php') ) {echo 'active';} ?>">
 						<a href="#">
 							<i class="fa fa-hand-o-right"></i>
-							<span>Gallery</span>
+							<span>Galeria</span>
 							<span class="pull-right-container">
 								<i class="fa fa-angle-left pull-right"></i>
 							</span>
 						</a>
 						<ul class="treeview-menu">
-							<li><a href="photo.php"><i class="fa fa-circle-o"></i> Photo Gallery</a></li>
-							<li><a href="video.php"><i class="fa fa-circle-o"></i> Video Gallery</a></li>
+							<li><a href="photo.php"><i class="fa fa-circle-o"></i> Foto Galeria</a></li>
+							<li><a href="video.php"><i class="fa fa-circle-o"></i> Video Galeria</a></li>
 						</ul>
 					</li>
 
@@ -151,7 +151,7 @@ if(!isset($_SESSION['user'])) {
 							</span>
 						</a>
 						<ul class="treeview-menu">
-							<li><a href="category.php"><i class="fa fa-circle-o"></i> Category</a></li>
+							<li><a href="category.php"><i class="fa fa-circle-o"></i> Galeria</a></li>
 							<li><a href="post.php"><i class="fa fa-circle-o"></i> Posts</a></li>
 						</ul>
 					</li>
@@ -159,7 +159,7 @@ if(!isset($_SESSION['user'])) {
 					<li class="treeview <?php if( ($cur_page == 'size.php') || ($cur_page == 'size-add.php') || ($cur_page == 'size-edit.php') || ($cur_page == 'color.php') || ($cur_page == 'color-add.php') || ($cur_page == 'color-edit.php') || ($cur_page == 'country.php') || ($cur_page == 'country-add.php') || ($cur_page == 'country-edit.php') || ($cur_page == 'shipping-cost.php') || ($cur_page == 'shipping-cost-edit.php') || ($cur_page == 'top-category.php') || ($cur_page == 'top-category-add.php') || ($cur_page == 'top-category-edit.php') || ($cur_page == 'mid-category.php') || ($cur_page == 'mid-category-add.php') || ($cur_page == 'mid-category-edit.php') || ($cur_page == 'end-category.php') || ($cur_page == 'end-category-add.php') || ($cur_page == 'end-category-edit.php') ) {echo 'active';} ?>">
 						<a href="#">
 							<i class="fa fa-hand-o-right"></i>
-							<span>Shop Section</span>
+							<span>Tienda</span>
 							<span class="pull-right-container">
 								<i class="fa fa-angle-left pull-right"></i>
 							</span>
@@ -173,19 +173,19 @@ if(!isset($_SESSION['user'])) {
 							<li><a href="mid-category.php"><i class="fa fa-circle-o"></i> Mid Level Category</a></li>
 							<li><a href="end-category.php"><i class="fa fa-circle-o"></i> End Level Category</a></li>
 						</ul>
-					</li>
+					</li> -->
 
 
 					<li class="treeview <?php if( ($cur_page == 'product.php') || ($cur_page == 'product-add.php') || ($cur_page == 'product-edit.php') ) {echo 'active';} ?>">
 			          <a href="product.php">
-			            <i class="fa fa-hand-o-right"></i> <span>Product</span>
+			            <i class="fa fa-hand-o-right"></i> <span>Producto</span>
 			          </a>
 			        </li>
 
-
+<!-- 
 			        <li class="treeview <?php if( ($cur_page == 'order.php') ) {echo 'active';} ?>">
 			          <a href="order.php">
-			            <i class="fa fa-hand-o-right"></i> <span>Order</span>
+			            <i class="fa fa-hand-o-right"></i> <span>Pedido</span>
 			          </a>
 			        </li>
 
@@ -198,14 +198,14 @@ if(!isset($_SESSION['user'])) {
 
 			        <li class="treeview <?php if( ($cur_page == 'language.php') ) {echo 'active';} ?>">
 			          <a href="language.php">
-			            <i class="fa fa-hand-o-right"></i> <span>Language Settings</span>
+			            <i class="fa fa-hand-o-right"></i> <span>Lenguaje</span>
 			          </a>
 			        </li>
 					
 					<li class="treeview <?php if( ($cur_page == 'customer-message.php') ) {echo 'active';} ?>">
 						<a href="#">
 							<i class="fa fa-hand-o-right"></i>
-							<span>Message</span>
+							<span>Mensaje</span>
 							<span class="pull-right-container">
 								<i class="fa fa-angle-left pull-right"></i>
 							</span>
@@ -236,16 +236,16 @@ if(!isset($_SESSION['user'])) {
 
 			        <li class="treeview <?php if( ($cur_page == 'advertisement.php') ) {echo 'active';} ?>">
 			          <a href="advertisement.php">
-			            <i class="fa fa-hand-o-right"></i> <span>Advertisement</span>
+			            <i class="fa fa-hand-o-right"></i> <span>Anuncio</span>
 			          </a>
 			        </li>
 
 			        <li class="treeview <?php if( ($cur_page == 'subscriber.php')||($cur_page == 'subscriber.php') ) {echo 'active';} ?>">
 			          <a href="subscriber.php">
-			            <i class="fa fa-hand-o-right"></i> <span>Subscriber</span>
+			            <i class="fa fa-hand-o-right"></i> <span>Subscritor</span>
 			          </a>
 			        </li>
-
+ -->
 
 			        
 

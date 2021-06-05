@@ -1,11 +1,11 @@
 <?php require_once('header.php'); ?>
 
 <section class="content-header">
-	<h1>Dashboard</h1>
+	<h1>Panel</h1>
 </section>
 
 <?php
-$statement = $pdo->prepare("SELECT * FROM tbl_top_category");
+$statement = $pdo->prepare("CALL sp_show_category");//"SELECT * FROM tbl_top_category"
 $statement->execute();
 $total_top_category = $statement->rowCount();
 
