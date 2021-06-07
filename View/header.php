@@ -374,9 +374,9 @@ foreach ($result as $row) {
 
 <?php echo $after_body; ?>
 
-<div id="preloader">
+<!-- <div id="preloader">
 	<div id="status"></div>
-</div>
+</div> -->
 
 
 <div class="top">

@@ -18,7 +18,7 @@ $dbuser = 'root';
 $dbpass = '';
 
 // Defining base url
-define("BASE_URL", "http://localhost.com/");
+define("BASE_URL", "http://localhost/cms/view/");
 
 // Getting Admin url
 define("ADMIN_URL", BASE_URL . "admin" . "/");
