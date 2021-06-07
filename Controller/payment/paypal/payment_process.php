@@ -1,7 +1,7 @@
 <?php
 ob_start();
 session_start();
-require_once('../../admin/inc/config.php');
+require_once('../../Model/inc/config.php');
 
 $error_message = '';
 
