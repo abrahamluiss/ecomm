@@ -1,5 +1,5 @@
 <?php
-include '../../admin/inc/config.php';
+include 'inc/config.php';
 $now = gmdate("D, d M Y H:i:s");
 header('Content-Type: text/csv; charset=utf-8');  
 header('Content-Disposition: attachment; filename=subscriber_list.csv');  
