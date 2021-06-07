@@ -36,7 +36,7 @@ if(isset($_POST['form1'])) {
 
 		// uploading the photo into the main location and giving it a final name
 		$final_name = 'photo-'.$ai_id.'.'.$ext;
-        move_uploaded_file( $path_tmp, '../assets/uploads/'.$final_name );
+        move_uploaded_file( $path_tmp, '../../View/assets/uploads/'.$final_name );
 
 		// saving into the database
 		$statement = $pdo->prepare("INSERT INTO tbl_photo (caption,photo) VALUES (?,?)");

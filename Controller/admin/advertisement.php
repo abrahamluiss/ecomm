@@ -25,7 +25,7 @@ if(isset($_POST['form1'])) {
         if($_POST['adv_type'] == 'Adsense Code') {
             
             if(isset($_POST['previous_photo'])) {
-                unlink('../assets/uploads/'.$_POST['previous_photo']);    
+                unlink('../../View/assets/uploads/'.$_POST['previous_photo']);    
             }
 
             $statement = $pdo->prepare("UPDATE tbl_advertisement SET adv_type=?,adv_photo=?, adv_url=?,adv_adsense_code=? WHERE adv_id=?");
@@ -37,11 +37,11 @@ if(isset($_POST['form1'])) {
                 $statement->execute(array($_POST['adv_type'],$_POST['adv_url'],'',1));
             } else {
                 if(isset($_POST['previous_photo'])) {
-                    unlink('../assets/uploads/'.$_POST['previous_photo']);    
+                    unlink('../../View/assets/uploads/'.$_POST['previous_photo']);    
                 }
 
                 $final_name = 'ad-1.'.$ext;
-                move_uploaded_file( $path_tmp, '../assets/uploads/'.$final_name );
+                move_uploaded_file( $path_tmp, '../../View/assets/uploads/'.$final_name );
 
                 // updating into the database
                 $statement = $pdo->prepare("UPDATE tbl_advertisement SET adv_type=?, adv_photo=?, adv_url=?,adv_adsense_code=? WHERE adv_id=?");
@@ -77,7 +77,7 @@ if(isset($_POST['form2'])) {
         if($_POST['adv_type'] == 'Adsense Code') {
             
             if(isset($_POST['previous_photo'])) {
-                unlink('../assets/uploads/'.$_POST['previous_photo']);    
+                unlink('../../View/assets/uploads/'.$_POST['previous_photo']);    
             }
 
             $statement = $pdo->prepare("UPDATE tbl_advertisement SET adv_type=?,adv_photo=?, adv_url=?,adv_adsense_code=? WHERE adv_id=?");
@@ -89,11 +89,11 @@ if(isset($_POST['form2'])) {
                 $statement->execute(array($_POST['adv_type'],$_POST['adv_url'],'',2));
             } else {
                 if(isset($_POST['previous_photo'])) {
-                    unlink('../assets/uploads/'.$_POST['previous_photo']);    
+                    unlink('../../View/assets/uploads/'.$_POST['previous_photo']);    
                 }
 
                 $final_name = 'ad-2.'.$ext;
-                move_uploaded_file( $path_tmp, '../assets/uploads/'.$final_name );
+                move_uploaded_file( $path_tmp, '../../View/assets/uploads/'.$final_name );
 
                 // updating into the database
                 $statement = $pdo->prepare("UPDATE tbl_advertisement SET adv_type=?, adv_photo=?, adv_url=?,adv_adsense_code=? WHERE adv_id=?");
@@ -130,7 +130,7 @@ if(isset($_POST['form3'])) {
         if($_POST['adv_type'] == 'Adsense Code') {
             
             if(isset($_POST['previous_photo'])) {
-                unlink('../assets/uploads/'.$_POST['previous_photo']);    
+                unlink('../../View/assets/uploads/'.$_POST['previous_photo']);    
             }
 
             $statement = $pdo->prepare("UPDATE tbl_advertisement SET adv_type=?,adv_photo=?, adv_url=?,adv_adsense_code=? WHERE adv_id=?");
@@ -142,11 +142,11 @@ if(isset($_POST['form3'])) {
                 $statement->execute(array($_POST['adv_type'],$_POST['adv_url'],'',3));
             } else {
                 if(isset($_POST['previous_photo'])) {
-                    unlink('../assets/uploads/'.$_POST['previous_photo']);    
+                    unlink('../../View/assets/uploads/'.$_POST['previous_photo']);    
                 }
 
                 $final_name = 'ad-3.'.$ext;
-                move_uploaded_file( $path_tmp, '../assets/uploads/'.$final_name );
+                move_uploaded_file( $path_tmp, '../../View/assets/uploads/'.$final_name );
 
                 // updating into the database
                 $statement = $pdo->prepare("UPDATE tbl_advertisement SET adv_type=?, adv_photo=?, adv_url=?,adv_adsense_code=? WHERE adv_id=?");
@@ -183,7 +183,7 @@ if(isset($_POST['form4'])) {
         if($_POST['adv_type'] == 'Adsense Code') {
             
             if(isset($_POST['previous_photo'])) {
-                unlink('../assets/uploads/'.$_POST['previous_photo']);    
+                unlink('../../View/assets/uploads/'.$_POST['previous_photo']);    
             }
 
             $statement = $pdo->prepare("UPDATE tbl_advertisement SET adv_type=?,adv_photo=?, adv_url=?,adv_adsense_code=? WHERE adv_id=?");
@@ -195,11 +195,11 @@ if(isset($_POST['form4'])) {
                 $statement->execute(array($_POST['adv_type'],$_POST['adv_url'],'',4));
             } else {
                 if(isset($_POST['previous_photo'])) {
-                    unlink('../assets/uploads/'.$_POST['previous_photo']);    
+                    unlink('../../View/assets/uploads/'.$_POST['previous_photo']);    
                 }
 
                 $final_name = 'ad-4.'.$ext;
-                move_uploaded_file( $path_tmp, '../assets/uploads/'.$final_name );
+                move_uploaded_file( $path_tmp, '../../View/assets/uploads/'.$final_name );
 
                 // updating into the database
                 $statement = $pdo->prepare("UPDATE tbl_advertisement SET adv_type=?, adv_photo=?, adv_url=?,adv_adsense_code=? WHERE adv_id=?");
@@ -235,7 +235,7 @@ if(isset($_POST['form5'])) {
         if($_POST['adv_type'] == 'Adsense Code') {
             
             if(isset($_POST['previous_photo'])) {
-                unlink('../assets/uploads/'.$_POST['previous_photo']);    
+                unlink('../../View/assets/uploads/'.$_POST['previous_photo']);    
             }
 
             $statement = $pdo->prepare("UPDATE tbl_advertisement SET adv_type=?,adv_photo=?, adv_url=?,adv_adsense_code=? WHERE adv_id=?");
@@ -247,11 +247,11 @@ if(isset($_POST['form5'])) {
                 $statement->execute(array($_POST['adv_type'],$_POST['adv_url'],'',5));
             } else {
                 if(isset($_POST['previous_photo'])) {
-                    unlink('../assets/uploads/'.$_POST['previous_photo']);    
+                    unlink('../../View/assets/uploads/'.$_POST['previous_photo']);    
                 }
 
                 $final_name = 'ad-5.'.$ext;
-                move_uploaded_file( $path_tmp, '../assets/uploads/'.$final_name );
+                move_uploaded_file( $path_tmp, '../../View/assets/uploads/'.$final_name );
 
                 // updating into the database
                 $statement = $pdo->prepare("UPDATE tbl_advertisement SET adv_type=?, adv_photo=?, adv_url=?,adv_adsense_code=? WHERE adv_id=?");
@@ -287,7 +287,7 @@ if(isset($_POST['form6'])) {
         if($_POST['adv_type'] == 'Adsense Code') {
             
             if(isset($_POST['previous_photo'])) {
-                unlink('../assets/uploads/'.$_POST['previous_photo']);    
+                unlink('../../View/assets/uploads/'.$_POST['previous_photo']);    
             }
 
             $statement = $pdo->prepare("UPDATE tbl_advertisement SET adv_type=?,adv_photo=?, adv_url=?,adv_adsense_code=? WHERE adv_id=?");
@@ -299,11 +299,11 @@ if(isset($_POST['form6'])) {
                 $statement->execute(array($_POST['adv_type'],$_POST['adv_url'],'',6));
             } else {
                 if(isset($_POST['previous_photo'])) {
-                    unlink('../assets/uploads/'.$_POST['previous_photo']);    
+                    unlink('../../View/assets/uploads/'.$_POST['previous_photo']);    
                 }
 
                 $final_name = 'ad-6.'.$ext;
-                move_uploaded_file( $path_tmp, '../assets/uploads/'.$final_name );
+                move_uploaded_file( $path_tmp, '../../View/assets/uploads/'.$final_name );
 
                 // updating into the database
                 $statement = $pdo->prepare("UPDATE tbl_advertisement SET adv_type=?, adv_photo=?, adv_url=?,adv_adsense_code=? WHERE adv_id=?");
@@ -402,7 +402,7 @@ foreach ($result as $row) {
                                         <div class="form-group" id="tabField1">
                                             <label class="col-sm-3 control-label">Existing Photo</label>
                                             <div class="col-sm-5" style="padding-top:5px;">
-                                                <img src="../assets/uploads/<?php echo $adv_photo[0]; ?>" style="width:400px;">
+                                                <img src="../../View/assets/uploads/<?php echo $adv_photo[0]; ?>" style="width:400px;">
                                                 <input type="hidden" name="previous_photo" value="<?php echo $adv_photo[0]; ?>">
                                             </div>
                                         </div>
@@ -464,7 +464,7 @@ foreach ($result as $row) {
                                         <div class="form-group" id="tabField5">
                                             <label class="col-sm-3 control-label">Existing Photo</label>
                                             <div class="col-sm-5" style="padding-top:5px;">
-                                                <img src="../assets/uploads/<?php echo $adv_photo[1]; ?>" style="width:400px;">
+                                                <img src="../../View/assets/uploads/<?php echo $adv_photo[1]; ?>" style="width:400px;">
                                                 <input type="hidden" name="previous_photo" value="<?php echo $adv_photo[1]; ?>">
                                             </div>
                                         </div>
@@ -527,7 +527,7 @@ foreach ($result as $row) {
                                         <div class="form-group" id="tabField9">
                                             <label class="col-sm-3 control-label">Existing Photo</label>
                                             <div class="col-sm-5" style="padding-top:5px;">
-                                                <img src="../assets/uploads/<?php echo $adv_photo[2]; ?>" style="width:400px;">
+                                                <img src="../../View/assets/uploads/<?php echo $adv_photo[2]; ?>" style="width:400px;">
                                                 <input type="hidden" name="previous_photo" value="<?php echo $adv_photo[2]; ?>">
                                             </div>
                                         </div>
@@ -591,7 +591,7 @@ foreach ($result as $row) {
                                         <div class="form-group" id="tabField13">
                                             <label class="col-sm-3 control-label">Existing Photo</label>
                                             <div class="col-sm-5" style="padding-top:5px;">
-                                                <img src="../assets/uploads/<?php echo $adv_photo[3]; ?>" style="width:400px;">
+                                                <img src="../../View/assets/uploads/<?php echo $adv_photo[3]; ?>" style="width:400px;">
                                                 <input type="hidden" name="previous_photo" value="<?php echo $adv_photo[3]; ?>">
                                             </div>
                                         </div>
@@ -655,7 +655,7 @@ foreach ($result as $row) {
                                         <div class="form-group" id="tabField17">
                                             <label class="col-sm-3 control-label">Existing Photo</label>
                                             <div class="col-sm-5" style="padding-top:5px;">
-                                                <img src="../assets/uploads/<?php echo $adv_photo[4]; ?>" style="width:400px;">
+                                                <img src="../../View/assets/uploads/<?php echo $adv_photo[4]; ?>" style="width:400px;">
                                                 <input type="hidden" name="previous_photo" value="<?php echo $adv_photo[4]; ?>">
                                             </div>
                                         </div>
@@ -718,7 +718,7 @@ foreach ($result as $row) {
                                         <div class="form-group" id="tabField21">
                                             <label class="col-sm-3 control-label">Existing Photo</label>
                                             <div class="col-sm-5" style="padding-top:5px;">
-                                                <img src="../assets/uploads/<?php echo $adv_photo[5]; ?>" style="width:200px;">
+                                                <img src="../../View/assets/uploads/<?php echo $adv_photo[5]; ?>" style="width:200px;">
                                                 <input type="hidden" name="previous_photo" value="<?php echo $adv_photo[5]; ?>">
                                             </div>
                                         </div>

@@ -41,7 +41,7 @@ if(isset($_POST['form1'])) {
 
 
 		$final_name = 'service-'.$ai_id.'.'.$ext;
-        move_uploaded_file( $path_tmp, '../assets/uploads/'.$final_name );
+        move_uploaded_file( $path_tmp, '../../View/assets/uploads/'.$final_name );
 
 	
 		$statement = $pdo->prepare("INSERT INTO tbl_service (title,content,photo) VALUES (?,?,?)");

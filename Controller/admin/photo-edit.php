@@ -28,10 +28,10 @@ if(isset($_POST['form1'])) {
 			$statement = $pdo->prepare("UPDATE tbl_photo SET caption=? WHERE id=?");
 			$statement->execute(array($_POST['caption'],$_REQUEST['id']));
     	} else {
-    		unlink('../assets/uploads/'.$_POST['previous_photo']);
+    		unlink('../../View/assets/uploads/'.$_POST['previous_photo']);
 
     		$final_name = 'photo-'.$_REQUEST['id'].'.'.$ext;
-        	move_uploaded_file( $path_tmp, '../assets/uploads/'.$final_name );
+        	move_uploaded_file( $path_tmp, '../../View/assets/uploads/'.$final_name );
 
         	// updating into the database
 			$statement = $pdo->prepare("UPDATE tbl_photo SET caption=?, photo=? WHERE id=?");
@@ -110,7 +110,7 @@ foreach ($result as $row) {
 						<div class="form-group">
 				            <label for="" class="col-sm-2 control-label">Existing Photo</label>
 				            <div class="col-sm-6" style="padding-top:6px;">
-				                <img src="../assets/uploads/<?php echo $photo; ?>" class="existing-photo" style="width:300px;">
+				                <img src="../../View/assets/uploads/<?php echo $photo; ?>" class="existing-photo" style="width:300px;">
 
 				                <input type="hidden" name="previous_photo" value="<?php echo $photo; ?>">
 				            </div>

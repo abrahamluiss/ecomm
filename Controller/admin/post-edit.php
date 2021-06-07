@@ -91,7 +91,7 @@ if(isset($_POST['form1'])) {
 	    if($previous_photo == '' && $path != '') {
 
 	    	$final_name = 'post-'.$_REQUEST['id'].'.'.$ext;
-            move_uploaded_file( $path_tmp, '../assets/uploads/'.$final_name );
+            move_uploaded_file( $path_tmp, '../../View/assets/uploads/'.$final_name );
 
 	    	$statement = $pdo->prepare("UPDATE tbl_post SET post_title=?, post_slug=?, post_content=?, post_date=?, photo=?, category_id=?, meta_title=?, meta_keyword=?, meta_description=? WHERE post_id=?");
 	    	$statement->execute(array($_POST['post_title'],$post_slug,$_POST['post_content'],$_POST['post_date'],$final_name,$_POST['category_id'],$_POST['meta_title'],$_POST['meta_keyword'],$_POST['meta_description'],$_REQUEST['id']));
@@ -101,10 +101,10 @@ if(isset($_POST['form1'])) {
 	    // If previous image found and user want to change the photo
 		if($previous_photo != '' && $path != '') {
 
-	    	unlink('../assets/uploads/'.$previous_photo);
+	    	unlink('../../View/assets/uploads/'.$previous_photo);
 
 	    	$final_name = 'post-'.$_REQUEST['id'].'.'.$ext;
-            move_uploaded_file( $path_tmp, '../assets/uploads/'.$final_name );
+            move_uploaded_file( $path_tmp, '../../View/assets/uploads/'.$final_name );
 
 	    	$statement = $pdo->prepare("UPDATE tbl_post SET post_title=?, post_slug=?, post_content=?, post_date=?, photo=?, category_id=?, meta_title=?, meta_keyword=?, meta_description=? WHERE post_id=?");
 	    	$statement->execute(array($_POST['post_title'],$post_slug,$_POST['post_content'],$_POST['post_date'],$final_name,$_POST['category_id'],$_POST['meta_title'],$_POST['meta_keyword'],$_POST['meta_description'],$_REQUEST['id']));
@@ -213,7 +213,7 @@ foreach ($result as $row) {
 				            	if($photo == '') {
 				            		echo 'No photo found';
 				            	} else {
-				            		echo '<img src="../assets/uploads/'.$photo.'" class="existing-photo" style="width:200px;">';	
+				            		echo '<img src="../../View/assets/uploads/'.$photo.'" class="existing-photo" style="width:200px;">';	
 				            	}
 				            	?>
 				                <input type="hidden" name="previous_photo" value="<?php echo $photo; ?>">

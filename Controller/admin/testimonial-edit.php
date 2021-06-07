@@ -44,10 +44,10 @@ if(isset($_POST['form1'])) {
     		$statement->execute(array($_POST['name'],$_POST['designation'],$_POST['company'],$_POST['comment'],$_REQUEST['id']));
 		} else {
 
-			unlink('../assets/uploads/'.$_POST['current_photo']);
+			unlink('../../View/assets/uploads/'.$_POST['current_photo']);
 
 			$final_name = 'testimonial-'.$_REQUEST['id'].'.'.$ext;
-        	move_uploaded_file( $path_tmp, '../assets/uploads/'.$final_name );
+        	move_uploaded_file( $path_tmp, '../../View/assets/uploads/'.$final_name );
 
         	$statement = $pdo->prepare("UPDATE tbl_testimonial SET name=?, designation=?, company=?, photo=?, comment=? WHERE id=?");
     		$statement->execute(array($_POST['name'],$_POST['designation'],$_POST['company'],$final_name,$_POST['comment'],$_REQUEST['id']));
@@ -141,7 +141,7 @@ foreach ($result as $row) {
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Existing Photo</label>
 							<div class="col-sm-9" style="padding-top:5px">
-								<img src="../assets/uploads/<?php echo $photo; ?>" alt="Slider Photo" style="width:180px;">
+								<img src="../../View/assets/uploads/<?php echo $photo; ?>" alt="Slider Photo" style="width:180px;">
 							</div>
 						</div>
 						<div class="form-group">

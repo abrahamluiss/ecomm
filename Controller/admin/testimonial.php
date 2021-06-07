@@ -48,7 +48,7 @@
 								?>
 								<tr>
 									<td><?php echo $i; ?></td>
-									<td style="width:130px;"><img src="../assets/uploads/<?php echo $row['photo']; ?>" alt="<?php echo $row['name']; ?>" style="width:120px;"></td>
+									<td style="width:130px;"><img src="../../View/assets/uploads/<?php echo $row['photo']; ?>" alt="<?php echo $row['name']; ?>" style="width:120px;"></td>
 									<td><?php echo $row['name']; ?></td>
 									<td><?php echo $row['designation']; ?></td>
 									<td><?php echo $row['company']; ?></td>

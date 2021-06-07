@@ -50,7 +50,7 @@
 								?>
 								<tr>
 									<td><?php echo $i; ?></td>
-									<td style="width:150px;"><img src="../assets/uploads/<?php echo $row['photo']; ?>" alt="<?php echo $row['heading']; ?>" style="width:140px;"></td>
+									<td style="width:150px;"><img src="../../View/assets/uploads/<?php echo $row['photo']; ?>" alt="<?php echo $row['heading']; ?>" style="width:140px;"></td>
 									<td><?php echo $row['heading']; ?></td>
 									<td><?php echo $row['content']; ?></td>
 									<td><?php echo $row['button_text']; ?></td>

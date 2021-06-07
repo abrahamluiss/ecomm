@@ -26,12 +26,12 @@ if(isset($_POST['form1'])) {
         $result = $statement->fetchAll(PDO::FETCH_ASSOC);                           
         foreach ($result as $row) {
             $logo = $row['logo'];
-            unlink('../assets/uploads/'.$logo);
+            unlink('../../View/assets/uploads/'.$logo);
         }
 
         // updating the data
         $final_name = 'logo'.'.'.$ext;
-        move_uploaded_file( $path_tmp, '../assets/uploads/'.$final_name );
+        move_uploaded_file( $path_tmp, '../../View/assets/uploads/'.$final_name );
 
         // updating the database
         $statement = $pdo->prepare("UPDATE tbl_settings SET logo=? WHERE id=1");
@@ -67,12 +67,12 @@ if(isset($_POST['form2'])) {
         $result = $statement->fetchAll(PDO::FETCH_ASSOC);                           
         foreach ($result as $row) {
             $favicon = $row['favicon'];
-            unlink('../assets/uploads/'.$favicon);
+            unlink('../../View/assets/uploads/'.$favicon);
         }
 
         // updating the data
         $final_name = 'favicon'.'.'.$ext;
-        move_uploaded_file( $path_tmp, '../assets/uploads/'.$final_name );
+        move_uploaded_file( $path_tmp, '../../View/assets/uploads/'.$final_name );
 
         // updating the database
         $statement = $pdo->prepare("UPDATE tbl_settings SET favicon=? WHERE id=1");
@@ -173,12 +173,12 @@ if(isset($_POST['form6_7'])) {
             $result = $statement->fetchAll(PDO::FETCH_ASSOC);                           
             foreach ($result as $row) {
                 $cta_photo = $row['cta_photo'];
-                unlink('../assets/uploads/'.$cta_photo);
+                unlink('../../View/assets/uploads/'.$cta_photo);
             }
 
             // updating the data
             $final_name = 'cta'.'.'.$ext;
-            move_uploaded_file( $path_tmp, '../assets/uploads/'.$final_name );
+            move_uploaded_file( $path_tmp, '../../View/assets/uploads/'.$final_name );
 
             // updating the database
             $statement = $pdo->prepare("UPDATE tbl_settings SET cta_title=?,cta_content=?,cta_read_more_text=?,cta_read_more_url=?,cta_photo=? WHERE id=1");
@@ -305,12 +305,12 @@ if(isset($_POST['form6_1'])) {
             $result = $statement->fetchAll(PDO::FETCH_ASSOC);                           
             foreach ($result as $row) {
                 $testimonial_photo = $row['testimonial_photo'];
-                unlink('../assets/uploads/'.$testimonial_photo);
+                unlink('../../View/assets/uploads/'.$testimonial_photo);
             }
 
             // updating the data
             $final_name = 'testimonial'.'.'.$ext;
-            move_uploaded_file( $path_tmp, '../assets/uploads/'.$final_name );
+            move_uploaded_file( $path_tmp, '../../View/assets/uploads/'.$final_name );
 
             // updating the database
             $statement = $pdo->prepare("UPDATE tbl_settings SET testimonial_title=?,testimonial_subtitle=?, testimonial_photo=? WHERE id=1");
@@ -387,12 +387,12 @@ if(isset($_POST['form7_1'])) {
         $result = $statement->fetchAll(PDO::FETCH_ASSOC);                           
         foreach ($result as $row) {
             $banner_login = $row['banner_login'];
-            unlink('../assets/uploads/'.$banner_login);
+            unlink('../../View/assets/uploads/'.$banner_login);
         }
 
         // updating the data
         $final_name = 'banner_login'.'.'.$ext;
-        move_uploaded_file( $path_tmp, '../assets/uploads/'.$final_name );
+        move_uploaded_file( $path_tmp, '../../View/assets/uploads/'.$final_name );
 
         // updating the database
         $statement = $pdo->prepare("UPDATE tbl_settings SET banner_login=? WHERE id=1");
@@ -428,12 +428,12 @@ if(isset($_POST['form7_2'])) {
         $result = $statement->fetchAll(PDO::FETCH_ASSOC);                           
         foreach ($result as $row) {
             $banner_registration = $row['banner_registration'];
-            unlink('../assets/uploads/'.$banner_registration);
+            unlink('../../View/assets/uploads/'.$banner_registration);
         }
 
         // updating the data
         $final_name = 'banner_registration'.'.'.$ext;
-        move_uploaded_file( $path_tmp, '../assets/uploads/'.$final_name );
+        move_uploaded_file( $path_tmp, '../../View/assets/uploads/'.$final_name );
 
         // updating the database
         $statement = $pdo->prepare("UPDATE tbl_settings SET banner_registration=? WHERE id=1");
@@ -469,12 +469,12 @@ if(isset($_POST['form7_3'])) {
         $result = $statement->fetchAll(PDO::FETCH_ASSOC);                           
         foreach ($result as $row) {
             $banner_forget_password = $row['banner_forget_password'];
-            unlink('../assets/uploads/'.$banner_forget_password);
+            unlink('../../View/assets/uploads/'.$banner_forget_password);
         }
 
         // updating the data
         $final_name = 'banner_forget_password'.'.'.$ext;
-        move_uploaded_file( $path_tmp, '../assets/uploads/'.$final_name );
+        move_uploaded_file( $path_tmp, '../../View/assets/uploads/'.$final_name );
 
         // updating the database
         $statement = $pdo->prepare("UPDATE tbl_settings SET banner_forget_password=? WHERE id=1");
@@ -510,12 +510,12 @@ if(isset($_POST['form7_4'])) {
         $result = $statement->fetchAll(PDO::FETCH_ASSOC);                           
         foreach ($result as $row) {
             $banner_reset_password = $row['banner_reset_password'];
-            unlink('../assets/uploads/'.$banner_reset_password);
+            unlink('../../View/assets/uploads/'.$banner_reset_password);
         }
 
         // updating the data
         $final_name = 'banner_reset_password'.'.'.$ext;
-        move_uploaded_file( $path_tmp, '../assets/uploads/'.$final_name );
+        move_uploaded_file( $path_tmp, '../../View/assets/uploads/'.$final_name );
 
         // updating the database
         $statement = $pdo->prepare("UPDATE tbl_settings SET banner_reset_password=? WHERE id=1");
@@ -552,12 +552,12 @@ if(isset($_POST['form7_6'])) {
         $result = $statement->fetchAll(PDO::FETCH_ASSOC);                           
         foreach ($result as $row) {
             $banner_search = $row['banner_search'];
-            unlink('../assets/uploads/'.$banner_search);
+            unlink('../../View/assets/uploads/'.$banner_search);
         }
 
         // updating the data
         $final_name = 'banner_search'.'.'.$ext;
-        move_uploaded_file( $path_tmp, '../assets/uploads/'.$final_name );
+        move_uploaded_file( $path_tmp, '../../View/assets/uploads/'.$final_name );
 
         // updating the database
         $statement = $pdo->prepare("UPDATE tbl_settings SET banner_search=? WHERE id=1");
@@ -593,12 +593,12 @@ if(isset($_POST['form7_7'])) {
         $result = $statement->fetchAll(PDO::FETCH_ASSOC);                           
         foreach ($result as $row) {
             $banner_cart = $row['banner_cart'];
-            unlink('../assets/uploads/'.$banner_cart);
+            unlink('../../View/assets/uploads/'.$banner_cart);
         }
 
         // updating the data
         $final_name = 'banner_cart'.'.'.$ext;
-        move_uploaded_file( $path_tmp, '../assets/uploads/'.$final_name );
+        move_uploaded_file( $path_tmp, '../../View/assets/uploads/'.$final_name );
 
         // updating the database
         $statement = $pdo->prepare("UPDATE tbl_settings SET banner_cart=? WHERE id=1");
@@ -634,12 +634,12 @@ if(isset($_POST['form7_8'])) {
         $result = $statement->fetchAll(PDO::FETCH_ASSOC);                           
         foreach ($result as $row) {
             $banner_checkout = $row['banner_checkout'];
-            unlink('../assets/uploads/'.$banner_checkout);
+            unlink('../../View/assets/uploads/'.$banner_checkout);
         }
 
         // updating the data
         $final_name = 'banner_checkout'.'.'.$ext;
-        move_uploaded_file( $path_tmp, '../assets/uploads/'.$final_name );
+        move_uploaded_file( $path_tmp, '../../View/assets/uploads/'.$final_name );
 
         // updating the database
         $statement = $pdo->prepare("UPDATE tbl_settings SET banner_checkout=? WHERE id=1");
@@ -675,12 +675,12 @@ if(isset($_POST['form7_9'])) {
         $result = $statement->fetchAll(PDO::FETCH_ASSOC);                           
         foreach ($result as $row) {
             $banner_product_category = $row['banner_product_category'];
-            unlink('../assets/uploads/'.$banner_product_category);
+            unlink('../../View/assets/uploads/'.$banner_product_category);
         }
 
         // updating the data
         $final_name = 'banner_product_category'.'.'.$ext;
-        move_uploaded_file( $path_tmp, '../assets/uploads/'.$final_name );
+        move_uploaded_file( $path_tmp, '../../View/assets/uploads/'.$final_name );
 
         // updating the database
         $statement = $pdo->prepare("UPDATE tbl_settings SET banner_product_category=? WHERE id=1");
@@ -716,12 +716,12 @@ if(isset($_POST['form7_10'])) {
         $result = $statement->fetchAll(PDO::FETCH_ASSOC);                           
         foreach ($result as $row) {
             $banner_blog = $row['banner_blog'];
-            unlink('../assets/uploads/'.$banner_blog);
+            unlink('../../View/assets/uploads/'.$banner_blog);
         }
 
         // updating the data
         $final_name = 'banner_blog'.'.'.$ext;
-        move_uploaded_file( $path_tmp, '../assets/uploads/'.$final_name );
+        move_uploaded_file( $path_tmp, '../../View/assets/uploads/'.$final_name );
 
         // updating the database
         $statement = $pdo->prepare("UPDATE tbl_settings SET banner_blog=? WHERE id=1");
@@ -921,7 +921,7 @@ foreach ($result as $row) {
                                     <div class="form-group">
                                         <label for="" class="col-sm-2 control-label">Existing Photo</label>
                                         <div class="col-sm-6" style="padding-top:6px;">
-                                            <img src="../assets/uploads/<?php echo $logo; ?>" class="existing-photo" style="height:80px;">
+                                            <img src="../../View/assets/uploads/<?php echo $logo; ?>" class="existing-photo" style="height:80px;">
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -952,7 +952,7 @@ foreach ($result as $row) {
                                     <div class="form-group">
                                         <label for="" class="col-sm-2 control-label">Existing Photo</label>
                                         <div class="col-sm-6" style="padding-top:6px;">
-                                            <img src="../assets/uploads/<?php echo $favicon; ?>" class="existing-photo" style="height:40px;">
+                                            <img src="../../View/assets/uploads/<?php echo $favicon; ?>" class="existing-photo" style="height:40px;">
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -1294,7 +1294,7 @@ foreach ($result as $row) {
                                     <div class="form-group">
                                         <label for="" class="col-sm-3 control-label">Existing Call to Action Background</label>
                                         <div class="col-sm-6" style="padding-top:6px;">
-                                            <img src="../assets/uploads/<?php echo $cta_photo; ?>" class="existing-photo" style="height:80px;">
+                                            <img src="../../View/assets/uploads/<?php echo $cta_photo; ?>" class="existing-photo" style="height:80px;">
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -1418,7 +1418,7 @@ foreach ($result as $row) {
                                     <div class="form-group">
                                         <label for="" class="col-sm-3 control-label">Existing Testimonial Background</label>
                                         <div class="col-sm-6" style="padding-top:6px;">
-                                            <img src="../assets/uploads/<?php echo $testimonial_photo; ?>" class="existing-photo" style="height:80px;">
+                                            <img src="../../View/assets/uploads/<?php echo $testimonial_photo; ?>" class="existing-photo" style="height:80px;">
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -1500,7 +1500,7 @@ foreach ($result as $row) {
                                     <td style="width:50%">
                                         <h4>Existing Login Page Banner</h4>
                                         <p>
-                                            <img src="<?php echo '../assets/uploads/'.$banner_login; ?>" alt="" style="width: 100%;height:auto;"> 
+                                            <img src="<?php echo '../../View/assets/uploads/'.$banner_login; ?>" alt="" style="width: 100%;height:auto;"> 
                                         </p>                                        
                                     </td>
                                     <td style="width:50%">
@@ -1515,7 +1515,7 @@ foreach ($result as $row) {
                                     <td style="width:50%">
                                         <h4>Existing Registration Page Banner</h4>
                                         <p>
-                                            <img src="<?php echo '../assets/uploads/'.$banner_registration; ?>" alt="" style="width: 100%;height:auto;">  
+                                            <img src="<?php echo '../../View/assets/uploads/'.$banner_registration; ?>" alt="" style="width: 100%;height:auto;">  
                                         </p>                                        
                                     </td>
                                     <td style="width:50%">
@@ -1530,7 +1530,7 @@ foreach ($result as $row) {
                                     <td style="width:50%">
                                         <h4>Existing Forget Password Page Banner</h4>
                                         <p>
-                                            <img src="<?php echo '../assets/uploads/'.$banner_forget_password; ?>" alt="" style="width: 100%;height:auto;">   
+                                            <img src="<?php echo '../../View/assets/uploads/'.$banner_forget_password; ?>" alt="" style="width: 100%;height:auto;">   
                                         </p>                                        
                                     </td>
                                     <td style="width:50%">
@@ -1545,7 +1545,7 @@ foreach ($result as $row) {
                                     <td style="width:50%">
                                         <h4>Existing Reset Password Page Banner</h4>
                                         <p>
-                                            <img src="<?php echo '../assets/uploads/'.$banner_reset_password; ?>" alt="" style="width: 100%;height:auto;">   
+                                            <img src="<?php echo '../../View/assets/uploads/'.$banner_reset_password; ?>" alt="" style="width: 100%;height:auto;">   
                                         </p>                                        
                                     </td>
                                     <td style="width:50%">
@@ -1561,7 +1561,7 @@ foreach ($result as $row) {
                                     <td style="width:50%">
                                         <h4>Existing Search Page Banner</h4>
                                         <p>
-                                            <img src="<?php echo '../assets/uploads/'.$banner_search; ?>" alt="" style="width: 100%;height:auto;">  
+                                            <img src="<?php echo '../../View/assets/uploads/'.$banner_search; ?>" alt="" style="width: 100%;height:auto;">  
                                         </p>                                        
                                     </td>
                                     <td style="width:50%">
@@ -1578,7 +1578,7 @@ foreach ($result as $row) {
                                     <td style="width:50%">
                                         <h4>Existing Cart Page Banner</h4>
                                         <p>
-                                            <img src="<?php echo '../assets/uploads/'.$banner_cart; ?>" alt="" style="width: 100%;height:auto;">  
+                                            <img src="<?php echo '../../View/assets/uploads/'.$banner_cart; ?>" alt="" style="width: 100%;height:auto;">  
                                         </p>                                        
                                     </td>
                                     <td style="width:50%">
@@ -1595,7 +1595,7 @@ foreach ($result as $row) {
                                     <td style="width:50%">
                                         <h4>Existing Checkout Page Banner</h4>
                                         <p>
-                                            <img src="<?php echo '../assets/uploads/'.$banner_checkout; ?>" alt="" style="width: 100%;height:auto;">  
+                                            <img src="<?php echo '../../View/assets/uploads/'.$banner_checkout; ?>" alt="" style="width: 100%;height:auto;">  
                                         </p>                                        
                                     </td>
                                     <td style="width:50%">
@@ -1611,7 +1611,7 @@ foreach ($result as $row) {
                                     <td style="width:50%">
                                         <h4>Existing Product Category Page Banner</h4>
                                         <p>
-                                            <img src="<?php echo '../assets/uploads/'.$banner_product_category; ?>" alt="" style="width: 100%;height:auto;">  
+                                            <img src="<?php echo '../../View/assets/uploads/'.$banner_product_category; ?>" alt="" style="width: 100%;height:auto;">  
                                         </p>                                        
                                     </td>
                                     <td style="width:50%">
@@ -1627,7 +1627,7 @@ foreach ($result as $row) {
                                     <td style="width:50%">
                                         <h4>Existing Blog Page Banner</h4>
                                         <p>
-                                            <img src="<?php echo '../assets/uploads/'.$banner_blog; ?>" alt="" style="width: 100%;height:auto;">  
+                                            <img src="<?php echo '../../View/assets/uploads/'.$banner_blog; ?>" alt="" style="width: 100%;height:auto;">  
                                         </p>                                        
                                     </td>
                                     <td style="width:50%">

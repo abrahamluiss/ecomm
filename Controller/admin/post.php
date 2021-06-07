@@ -60,11 +60,11 @@
 										<?php
 										if($row['photo'] == '')
 										{
-											echo '<img src="../assets/uploads/no-photo1.jpg" alt="" style="width:180px;">';
+											echo '<img src="../../View/assets/uploads/no-photo1.jpg" alt="" style="width:180px;">';
 										}
 										else
 										{
-											echo '<img src="../assets/uploads/'.$row['photo'].'" alt="'.$row['post_title'].'" style="width:180px;">';
+											echo '<img src="../../View/assets/uploads/'.$row['photo'].'" alt="'.$row['post_title'].'" style="width:180px;">';
 										}
 										?>
 									</td>

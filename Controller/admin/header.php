@@ -64,7 +64,7 @@ if(!isset($_SESSION['user'])) {
 					<ul class="nav navbar-nav">
 						<li class="dropdown user user-menu">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-								<img src="../assets/uploads/<?php echo $_SESSION['user']['photo']; ?>" class="user-image" alt="User Image">
+								<img src="../../View/assets/uploads/<?php echo $_SESSION['user']['photo']; ?>" class="user-image" alt="User Image">
 								<span class="hidden-xs"><?php echo $_SESSION['user']['full_name']; ?></span>
 							</a>
 							<ul class="dropdown-menu">
@@ -97,7 +97,7 @@ if(!isset($_SESSION['user'])) {
 			          </a>
 			        </li>
 
-<!-- 					
+					
 			        <li class="treeview <?php if( ($cur_page == 'settings.php') ) {echo 'active';} ?>">
 			          <a href="settings.php">
 			            <i class="fa fa-hand-o-right"></i> <span>Ajustes</span>
@@ -165,15 +165,15 @@ if(!isset($_SESSION['user'])) {
 							</span>
 						</a>
 						<ul class="treeview-menu">
-							<li><a href="size.php"><i class="fa fa-circle-o"></i> Size</a></li>
+							<li><a href="size.php"><i class="fa fa-circle-o"></i> Talla</a></li>
 							<li><a href="color.php"><i class="fa fa-circle-o"></i> Color</a></li>
-							<li><a href="country.php"><i class="fa fa-circle-o"></i> Country</a></li>
-							<li><a href="shipping-cost.php"><i class="fa fa-circle-o"></i> Shipping Cost</a></li>
-							<li><a href="top-category.php"><i class="fa fa-circle-o"></i> Top Level Category</a></li>
-							<li><a href="mid-category.php"><i class="fa fa-circle-o"></i> Mid Level Category</a></li>
-							<li><a href="end-category.php"><i class="fa fa-circle-o"></i> End Level Category</a></li>
+							<li><a href="country.php"><i class="fa fa-circle-o"></i> Pais</a></li>
+							<li><a href="shipping-cost.php"><i class="fa fa-circle-o"></i> Costo de envío</a></li>
+							<li><a href="top-category.php"><i class="fa fa-circle-o"></i> Categoría de nivel superior</a></li>
+							<li><a href="mid-category.php"><i class="fa fa-circle-o"></i> Categoría de nivel medio</a></li>
+							<li><a href="end-category.php"><i class="fa fa-circle-o"></i> Categoría de nivel final</a></li>
 						</ul>
-					</li> -->
+					</li>
 
 
 					<li class="treeview <?php if( ($cur_page == 'product.php') || ($cur_page == 'product-add.php') || ($cur_page == 'product-edit.php') ) {echo 'active';} ?>">
@@ -182,7 +182,7 @@ if(!isset($_SESSION['user'])) {
 			          </a>
 			        </li>
 
-<!-- 
+
 			        <li class="treeview <?php if( ($cur_page == 'order.php') ) {echo 'active';} ?>">
 			          <a href="order.php">
 			            <i class="fa fa-hand-o-right"></i> <span>Pedido</span>
@@ -245,7 +245,7 @@ if(!isset($_SESSION['user'])) {
 			            <i class="fa fa-hand-o-right"></i> <span>Subscritor</span>
 			          </a>
 			        </li>
- -->
+
 
 			        
 

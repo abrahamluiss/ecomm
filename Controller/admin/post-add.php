@@ -82,7 +82,7 @@ if(isset($_POST['form1'])) {
 		} else {
     		// uploading the photo into the main location and giving it a final name
     		$final_name = 'post-'.$ai_id.'.'.$ext;
-            move_uploaded_file( $path_tmp, '../assets/uploads/'.$final_name );
+            move_uploaded_file( $path_tmp, '../../View/assets/uploads/'.$final_name );
 
             $statement = $pdo->prepare("INSERT INTO tbl_post (post_title,post_slug,post_content,post_date,photo,category_id,total_view,meta_title,meta_keyword,meta_description) VALUES (?,?,?,?,?,?,?,?,?,?)");
 			$statement->execute(array($_POST['post_title'],$post_slug,$_POST['post_content'],$_POST['post_date'],$final_name,$_POST['category_id'],0,$_POST['meta_title'],$_POST['meta_keyword'],$_POST['meta_description']));

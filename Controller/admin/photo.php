@@ -42,7 +42,7 @@
 	                    <td><?php echo $i; ?></td>
 	                    <td><?php echo $row['caption']; ?></td>
 	                    <td>
-	                    	<img src="../assets/uploads/<?php echo $row['photo']; ?>" width="140">
+	                    	<img src="../../View/assets/uploads/<?php echo $row['photo']; ?>" width="140">
 	                    </td>
 	                    <td>
 	                        <a href="photo-edit.php?id=<?php echo $row['id']; ?>" class="btn btn-primary btn-xs">Edit</a>

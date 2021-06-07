@@ -69,7 +69,7 @@
 								?>
 								<tr>
 									<td><?php echo $i; ?></td>
-									<td style="width:130px;"><img src="../assets/uploads/<?php echo $row['p_featured_photo']; ?>" alt="<?php echo $row['p_name']; ?>" style="width:100px;"></td>
+									<td style="width:130px;"><img src="../../View/assets/uploads/<?php echo $row['p_featured_photo']; ?>" alt="<?php echo $row['p_name']; ?>" style="width:100px;"></td>
 									<td><?php echo $row['p_name']; ?></td>
 									<td><?php echo $row['p_old_price']; ?></td>
 									<td><?php echo $row['p_current_price']; ?></td>

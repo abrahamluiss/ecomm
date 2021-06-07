@@ -28,7 +28,7 @@ if(!isset($_REQUEST['id'])) {
 
 	// Unlink the photo
 	if($photo!='') {
-		unlink('../assets/uploads/'.$photo);	
+		unlink('../../View/assets/uploads/'.$photo);	
 	}
 
 	// Delete from tbl_service
