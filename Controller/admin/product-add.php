@@ -192,7 +192,7 @@ if(isset($_POST['form1'])) {
 				<div class="box box-info">
 					<div class="box-body">
 						<div class="form-group">
-							<label for="" class="col-sm-3 control-label">Top Level Category Name <span>*</span></label>
+							<label for="" class="col-sm-3 control-label">Nombre de categoría de nivel superior <span>*</span></label>
 							<div class="col-sm-4">
 								<select name="tcat_id" class="form-control select2 top-cat">
 									<option value="">Select Top Level Category</option>
