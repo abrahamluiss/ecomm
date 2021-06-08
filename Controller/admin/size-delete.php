@@ -2,6 +2,7 @@
 
 <?php
 // Preventing the direct access of this page.
+$idSize = $_REQUEST['id'];
 if(!isset($_REQUEST['id'])) {
 	header('location: logout.php');
 	exit;
@@ -20,7 +21,7 @@ if(!isset($_REQUEST['id'])) {
 <?php
 
 	// Delete from tbl_size
-	$statement = $pdo->prepare("DELETE FROM tbl_size WHERE size_id=?");
+	$statement = $pdo->prepare("CALL sp_delete_sizes('$idSize')");
 	$statement->execute(array($_REQUEST['id']));
 
 	header('location: size.php');

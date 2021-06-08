@@ -30,7 +30,7 @@
             <tbody>
             	<?php
             	$i=0;
-            	$statement = $pdo->prepare("SELECT * FROM tbl_size ORDER BY size_id ASC");
+            	$statement = $pdo->prepare("CALL sp_show_sizes");
             	$statement->execute();
             	$result = $statement->fetchAll(PDO::FETCH_ASSOC);							
             	foreach ($result as $row) {

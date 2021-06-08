@@ -3,7 +3,7 @@
 <?php
 if(isset($_POST['form1'])) {
 	$valid = 1;
-
+	$nameSize = $_POST['size_name'];
     if(empty($_POST['size_name'])) {
         $valid = 0;
         $error_message .= "Size Name can not be empty<br>";
@@ -22,7 +22,8 @@ if(isset($_POST['form1'])) {
     if($valid == 1) {
 
 		// Saving data into the main table tbl_size
-		$statement = $pdo->prepare("INSERT INTO tbl_size (size_name) VALUES (?)");
+		//$statement = $pdo->prepare("INSERT INTO tbl_size (size_name) VALUES (?)");
+		$statement = $pdo->prepare("CALL sp_insert_size(?)");
 		$statement->execute(array($_POST['size_name']));
 	
     	$success_message = 'Size is added successfully.';
