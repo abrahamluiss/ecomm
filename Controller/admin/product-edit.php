@@ -90,6 +90,7 @@ if(isset($_POST['form1'])) {
         }
 
         if($path == '') {
+/** 
         	$statement = $pdo->prepare("UPDATE tbl_product SET 
         							p_name=?, 
         							p_old_price=?, 
@@ -105,7 +106,10 @@ if(isset($_POST['form1'])) {
         							ecat_id=?
 
         							WHERE p_id=?");
+*/
+			$statement = $pdo->prepare("CALL sp_edit_product (?,?,?,?,?,?,?,?,?,?,?,?,?)");
         	$statement->execute(array(
+									$_REQUEST['id'],
         							$_POST['p_name'],
         							$_POST['p_old_price'],
         							$_POST['p_current_price'],
@@ -117,8 +121,8 @@ if(isset($_POST['form1'])) {
         							$_POST['p_return_policy'],
         							$_POST['p_is_featured'],
         							$_POST['p_is_active'],
-        							$_POST['ecat_id'],
-        							$_REQUEST['id']
+        							$_POST['ecat_id']
+
         						));
         } else {
 

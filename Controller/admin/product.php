@@ -32,8 +32,8 @@
 						<tbody>
 							<?php
 							$i=0;
+/** 
 							$statement = $pdo->prepare("SELECT
-														
 														t1.p_id,
 														t1.p_name,
 														t1.p_old_price,
@@ -62,6 +62,8 @@
 							                           	ON t3.tcat_id = t4.tcat_id
 							                           	ORDER BY t1.p_id DESC
 							                           	");
+							*/
+							$statement = $pdo->prepare("CALL sp_show_products");
 							$statement->execute();
 							$result = $statement->fetchAll(PDO::FETCH_ASSOC);
 							foreach ($result as $row) {

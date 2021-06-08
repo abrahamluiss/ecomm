@@ -66,7 +66,9 @@ if(!isset($_REQUEST['id'])) {
 	}
 
 	// Delete from tbl_order
-	$statement = $pdo->prepare("DELETE FROM tbl_order WHERE product_id=?");
+	//$statement = $pdo->prepare("DELETE FROM tbl_order WHERE product_id=?");
+	$idProduct = $_REQUEST['id'];
+	$statement = $pdo->prepare("CALL sp_delete_product('$idProduct')");
 	$statement->execute(array($_REQUEST['id']));
 
 	header('location: product.php');

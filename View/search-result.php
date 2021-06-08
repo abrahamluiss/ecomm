@@ -48,8 +48,9 @@ foreach ($result as $row) {
 			<?php
             /* ===================== Pagination Code Starts ================== */
             $adjacents = 5;
-            $statement = $pdo->prepare("SELECT * FROM tbl_product WHERE p_is_active=? AND p_name LIKE ?");
-            $statement->execute(array(1,$search_text));
+            //$statement = $pdo->prepare("SELECT * FROM tbl_product WHERE p_is_active=? AND p_name LIKE ?");
+            $statement = $pdo->prepare("CALL sp_search_product (?)");
+            $statement->execute(array($search_text));
             $total_pages = $statement->rowCount();
 
             $targetpage = BASE_URL.'search-result.php?search_text='.$_REQUEST['search_text'];   //your file name  (the name of this file)
