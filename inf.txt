@@ -1,0 +1,7 @@
+admin
+http://localhost/cms/Controller/admin/
+user: admin@gmail.com
+pass: 1234
+
+usuario 
+http://localhost/cms/View/
