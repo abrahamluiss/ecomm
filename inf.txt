@@ -5,3 +5,6 @@ pass: 1234
 
 usuario 
 http://localhost/cms/View/
+
+innodb_log_file_size=512M
+innodb_strict_mode=0
