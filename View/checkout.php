@@ -368,7 +368,7 @@ if(!isset($_SESSION['cart_p_id'])) {
                                         </div>
                                     </form>
 
-                                    <form action="payment/bank/init.php" method="post" id="bank_form">
+                                    <form action="../Controller/payment/bank/init.php" method="post" id="bank_form">
                                         <input type="hidden" name="amount" value="<?php echo $final_total; ?>">
                                         <div class="col-md-12 form-group">
                                             <label for=""><?php echo LANG_VALUE_43; ?></span></label><br>

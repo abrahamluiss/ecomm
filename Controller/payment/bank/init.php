@@ -1,8 +1,8 @@
 <?php
 ob_start();
 session_start();
-include("../../Model/inc/config.php");
-include("../../Model/inc/functions.php");
+include("../../../Model/inc/config.php");
+include("../../../Model/inc/functions.php");
 // Getting all language variables into array as global variable
 $i=1;
 $statement = $pdo->prepare("SELECT * FROM tbl_language");
@@ -153,7 +153,7 @@ if( !isset($_REQUEST['msg']) ) {
 	    unset($_SESSION['cart_p_name']);
 	    unset($_SESSION['cart_p_featured_photo']);
 
-	    header('location: ../../payment_success.php');
+	    header('location: ../../../View/payment_success.php');
 	}
 }
 ?>

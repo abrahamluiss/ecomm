@@ -161,3 +161,12 @@ SELECT * FROM tbl_product WHERE p_is_active = _p_is_active AND p_name LIKE _sear
 END$$
 
 DELIMITER 
+
+-- show user
+DELIMITER $$
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_show_user` ()  BEGIN
+	select * from tbl_user;
+END$$
+
+DELIMITER ;

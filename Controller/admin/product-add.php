@@ -102,24 +102,7 @@ if(isset($_POST['form1'])) {
         move_uploaded_file( $path_tmp, '../../View/assets/uploads/'.$final_name );
 
 		//Saving data into the main table tbl_product
-/** 
-		$statement = $pdo->prepare("INSERT INTO tbl_product(
-										p_name,
-										p_old_price,
-										p_current_price,
-										p_qty,
-										p_featured_photo,
-										p_description,
-										p_short_description,
-										p_feature,
-										p_condition,
-										p_return_policy,
-										p_total_view,
-										p_is_featured,
-										p_is_active,
-										ecat_id
-									) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
-*/
+
 		$statement = $pdo->prepare("CALL sp_insert_product(?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
 		$statement->execute(array(
 										$_POST['p_name'],

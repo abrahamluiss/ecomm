@@ -44,7 +44,7 @@ $total_order_complete_shipping_pending = $statement->rowCount();
 			<div class="info-box">
 				<span class="info-box-icon bg-aqua"><i class="fa fa-hand-o-right"></i></span>
 				<div class="info-box-content">
-					<span class="info-box-text">Top Categories</span>
+					<span class="info-box-text">Categorias</span>
 					<span class="info-box-number"><?php echo $total_top_category; ?></span>
 				</div>
 			</div>

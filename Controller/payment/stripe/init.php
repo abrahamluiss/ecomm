@@ -1,8 +1,8 @@
 <?php
 ob_start();
 session_start();
-include("../../Model/inc/config.php");
-include("../../Model/inc/functions.php");
+include("../../../Model/inc/config.php");
+include("../../../Model/inc/functions.php");
 // Getting all language variables into array as global variable
 $i=1;
 $statement = $pdo->prepare("SELECT * FROM tbl_language");
